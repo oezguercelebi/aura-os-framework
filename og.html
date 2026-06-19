@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+    background: #f4f4f5;
+    -webkit-print-color-adjust: exact;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .card {
+    position: relative;
+    width: 1020px; height: 470px;
+    background: #ffffff;
+    border: 1px solid rgba(24, 24, 27, 0.12);
+    border-radius: 24px;
+    box-shadow: 0 30px 80px rgba(24, 24, 27, 0.14);
+    padding: 64px 70px;
+    display: flex; flex-direction: column; justify-content: center;
+    overflow: hidden;
+  }
+  .card::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0; height: 8px; background: #ff5a1f;
+  }
+  .pill {
+    align-self: flex-start;
+    font-size: 19px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase;
+    color: #ff5a1f; border: 1.5px solid rgba(255, 90, 31, 0.36);
+    border-radius: 999px; padding: 9px 18px; margin-bottom: 30px;
+  }
+  .wordmark { font-size: 96px; font-weight: 800; letter-spacing: -0.03em; color: #18181b; line-height: 1; }
+  .wordmark .os { color: #ff5a1f; }
+  .tagline { margin-top: 22px; font-size: 38px; font-weight: 700; color: #18181b; letter-spacing: -0.01em; }
+  .foot { margin-top: 40px; display: flex; align-items: center; gap: 16px; font-size: 22px; color: #3f3f46; }
+  .foot .dot { width: 10px; height: 10px; border-radius: 50%; background: #ff5a1f; }
+  .foot b { color: #18181b; font-weight: 800; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="pill">Built for Framework · Confidential</div>
+    <div class="wordmark">Aura<span class="os">&nbsp;OS</span></div>
+    <div class="tagline">The post-app operating system.</div>
+    <div class="foot"><span class="dot"></span><span><b>Fuse Link</b> &nbsp;·&nbsp; prepared by Özgür Celebi</span></div>
+  </div>
+</body>
+</html>
